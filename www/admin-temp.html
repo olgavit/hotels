@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css.css">
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="main-nav">
+				<li>
+					<a href="#">На главную</a>
+				</li>
+
+				<li>
+					<a href="#">Выход</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="main-content">
+
+			<div class="section vertical">
+
+			  	<ul class="tabs">
+				    <li class="current">Администрирование</li>
+				    <li>Общие параметры</li>
+				    <li>Описание</li>
+				    <li>Сервисы</li>
+				    <li>Замечания</li>
+				    <li>Дополнительно</li>
+				    <li>Расположение</li>
+				    <li>Фотографии</li>
+			  	</ul>
+
+				<div class="box visible">
+						<fieldset>
+							<h1>Создать нового пользователя</h1>
+							<p><label>Login нового пользователя:</label><input type="text" name="log"/></p>
+						    <p><label>Пароль нового пользователя:</label><input type="text" name="pass"/></p>
+						    <p><label>Id нового пользователя:</label><input type="text" name="id"/></p>
+						    <input type="submit" value="Submit" class="submit"/>
+						</fieldset>
+
+						<fieldset>
+							<h1>Создать новый отель</h1>
+							<p><label>Название нового отеля:</label><input type="text" name="log"/></p>
+						    <input type="submit" value="Submit" class="submit"/>
+						</fieldset>
+
+						
+				</div>
+
+				<div class="box">
+					<h1>Введите общие сведения про гостиницу/о курорте/об отеле.</h1>
+					<div>
+						<p><label>Id объекта:</label><input type="text" name="id"/></p>
+					    <p><label>Название:</label><input type="text" name="name"/></p>
+					    <p><label>Время заезда:</label><input type="text" name="timeIn"/></p>
+					    <p><label>Время выезда:</label><input type="text" name="timeOut"/></p>
+					    <p><label>Mail:</label><input type="text" name="mail"/></p>
+					    <p><label>Web Site:</label><input type="text" name="website"/></p>
+					    <p><label>Адрес:</label><input type="text" name="address"/></p>
+
+					</div>
+
+					<div>
+						<h3>Типы питания</h3>
+					    <span><label>BB:</label><input type="checkbox" name="name"/></span>
+					    <span><label>HB:</label><input type="checkbox" name="name"/></span>
+					    <span><label>OB:</label><input type="checkbox" name="name"/></span>
+					    <span><label>FB:</label><input type="checkbox" name="name"/></span>
+					    <span><label>UAI:</label><input type="checkbox" name="name"/></span>
+
+					    <h3>Способы оплаты</h3>
+					    <span><label>Карточка:</label><input type="checkbox" name="name"/></span>
+					    <span><label>Перевод на номер:</label><input type="checkbox" name="name"/></span>
+					    <span><label>Наличные:</label><input type="checkbox" name="name"/></span>
+
+					    <h3>Типы комнат</h3>
+					    <span><label>Studio:</label><input type="checkbox" name="name"/></span>
+					    <span><label>Double:</label><input type="checkbox" name="name"/></span>
+					    <span><label>Luxe:</label><input type="checkbox" name="name"/> ...</span>
+
+					    <p>
+					    	<label>Регион:</label>
+					    	<select>
+					    		<option>Симферополь</option>
+					    		<option>Севастополь</option>
+					    		<option>Ялта</option>
+					    		<option>...</option>
+					    		
+
+					    	</select>
+					    </p>
+
+					</div>
+					<p><input type="submit" value="Submit" class="submit"/></p>
+				</div>
+				<div class="box">
+					<h1>Введите описание гостиницы/курорта/отеля.</h1>
+				    <form action="add.php" method="post" target="_blank">
+				    	<p><label>Id объекта:</label><input type="text" name="id"/></p>
+						<textarea id="MyTextarea" name="description"></textarea>
+						<br>
+						<input type="submit" value="Submit" class="submit"/>
+					</form>
+				</div>
+
+				<div class="box">
+					<h1>Введите типы сервисов гостиницы/курорта/отеля.</h1>
+				    <form action="add.php" method="post" target="_blank">
+				    	<p><label>Id объекта:</label><input type="text" name="id"/></p>
+						<textarea id="MyTextarea2" name="services"></textarea>
+						<br>
+						<input type="submit" value="Submit" class="submit"/>
+					</form>
+				</div>
+				<div class="box">
+					<h1>Введите важные замечание про условия проживания в  гостинице/на курорте/в отеле.</h1>
+				    <form action="add.php" method="post" target="_blank">
+				    	<p><label>Id объекта:</label><input type="text" name="id"/></p>
+						<textarea id="MyTextarea3" name="important"></textarea>
+						<br>
+						<input type="submit" value="Submit" class="submit"/>
+					</form>
+				</div>
+
+				<div class="box">
+					<h1>Введите дополнительные коментарии про гостиницу/о курорте/об отеле. </h1>
+				    <form action="add.php" method="post" target="_blank">
+				    	<p><label>Id объекта:</label><input type="text" name="id"/></p>
+						<textarea id="MyTextarea4" name="additions"></textarea>
+						<br>
+						<input type="submit" value="Submit" class="submit"/>
+					</form>
+				</div>
+
+				<div class="box">google map или поля ввода</div>
+				<div class="box">
+					<h1>Добавить фотографии гостиницы/курорта/отеля. </h1>
+					<p><label>Id объекта:</label><input type="text" name="id"/></p>
+					<p><label>Загрузить фотографии:</label><input type="file" name="fotos"></textarea></p>
+					<p><input type="submit" value="Submit" class="submit"/></p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer">
+
+		</div>
+		<script type="text/javascript" src="fckeditor/fckeditor.js"></script>
+		<script type="text/javascript" src="js.js"></script>		
+	</body>
+</html>

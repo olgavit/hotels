@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<?php
+		session_start();
+			echo $_SESSION['rights'];
+			if ($_SESSION['rights'] != 0) {
+				header ("Location: registration.html");
+			}
+		?>
+
+	</body>
+</html>

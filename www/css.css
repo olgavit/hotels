@@ -1,0 +1,116 @@
+* {margin: 0; padding: 0;}
+			body {font: 13px/1.5 "Trebuchet MS", Tahoma, Arial; min-width: 1300px; overflow: auto;}
+			a {color: #71B1D1; text-decoration: none;}
+			a:hover {color: #fff;}
+			p {padding: 7px 0;}
+			h1 {font-size: 21px; font-weight: normal; margin: 0 0 30px;}
+
+			ul {
+				list-style: none;
+			}
+
+			.section {
+				margin: 0 0 30px;
+			}
+
+			.vertical .tabs li:hover {
+				background: #ddd;
+				cursor: pointer;
+			}
+
+			.box {
+				display: none;
+			}
+
+			.box.visible {
+				display: block;
+			}
+
+			.section.vertical {
+				border-left: 260px solid #FFF;
+			}
+
+			.vertical .tabs {
+				width: 260px;
+				float: left;
+				display: inline;
+				margin: 0 0 0 -260px;
+				background: #71B1D1;
+				padding-top: 30px;
+			}
+
+			.vertical .tabs li {
+				padding: 0 14px;
+				width: 232px;
+				height: 35px;
+				line-height: 35px;
+				text-transform: uppercase;
+			}
+
+
+			.vertical .tabs li.current {
+				width: 233px;
+				color: #444;
+				background: #fff;
+				
+			}
+
+			.header {
+				height: 40px;
+				width: 100%;
+				background: #2B2F38;
+			}
+
+			.main-nav {
+				height: 40px;
+			}
+
+			.main-nav li {
+				line-height: 40px;
+				display: inline-block;
+				width: 200px;
+				text-align: center;
+			}
+
+			.main-nav li a {
+				text-transform: uppercase;
+			}
+
+			.footer {
+				width: 100%;
+				height: 40px;
+				background: #2B2F38;
+			}
+
+			.TB_ToolbarSet, .TB_Expand, .TB_Collapse {
+				background-color: #A2C2D8 !important;
+			}
+
+			.submit {
+				margin: 20px;
+				padding: 10px 20px;
+				background: #ccc;
+				border: none;
+				text-transform: uppercase;
+				cursor: pointer;
+			}
+
+			.box p {
+				width: 380px;
+			}
+
+			.box p input,
+			.box p textarea {
+				float: right;
+			}
+
+			.box > div {
+				width: 500px;
+				float: left;
+			}
+
+			h3 {
+				margin-top: 20px;
+				font-weight: normal;
+				font-size: 14px;
+			}
